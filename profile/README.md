@@ -1,12 +1,12 @@
 <div align="center">
 
-  <h2>Synapse Layer Protocol</h2>
+  <h2>Synapse Layer</h2>
 
-  <p><strong>Persistent, Encrypted Memory Infrastructure for AI Agents</strong></p>
+  <p><strong>Continuous Consciousness Infrastructure for AI Systems</strong></p>
 
-  <p>The missing primitive for stateless LLMs. 🧠</p>
+  <p>Persistent. Secure. 1-line integration. 🧠</p>
 
-  <p>Zero-Knowledge · MCP-Native · Built in Brazil 🇧🇷</p>
+  <p>MCP-Native · Zero-Knowledge · Built in Brazil 🇧🇷</p>
 
 </div>
 
@@ -19,27 +19,30 @@ Memory infrastructure for the Agent Economy.
 | Repo | Description |
 |---|---|
 | [**synapse-layer**](https://github.com/SynapseLayer/synapse-layer) | Core SDK — Open Source (Apache 2.0) |
-| [**synapse-layer-skill**](https://github.com/SynapseLayer/synapse-layer-skill) | Agent entrypoint for Abacus + marketplaces |
-| [**registry**](https://github.com/SynapseLayer/registry) | MCP Registry contribution |
+| [**synapse-layer-skill**](https://github.com/SynapseLayer/synapse-layer-skill) | Agent entrypoint for MCP & marketplaces |
+| [**.github**](https://github.com/SynapseLayer/.github) | Governance, templates & community |
 
 ---
 
-### Quick Connect
+### Quick Start
+
+```python
+from synapse_memory import SynapseMemory, SqliteBackend, remember
+
+memory = SynapseMemory(agent_id="my-agent", backend=SqliteBackend())
+
+@remember(memory)
+async def answer(prompt: str) -> str:
+    return llm.chat(prompt)  # auto recall + store
+```
+
+### Connect
 
 - 📦 **PyPI:** `pip install synapse-layer`
 - 🔌 **MCP:** `forge.synapselayer.org/api/mcp`
-- 📖 **Docs:** [synapselayer.org/docs](https://synapselayer.org/docs)
-- 🤖 **Smithery:** [smithery.ai/servers/synapselayer/synapse-protocol](https://smithery.ai/servers/synapselayer/synapse-protocol)
+- 📖 **Docs:** [docs.synapselayer.org](https://docs.synapselayer.org)
 - 🌐 **Website:** [synapselayer.org](https://synapselayer.org)
 
 ---
 
-<div align="center">
-
-  <strong>Giving Agents a Past. Giving Models a Soul. ⚗️</strong>
-
-  <br><br>
-
-  Built by <a href="https://synapselayer.org">Ismael Marchi</a> · <a href="https://x.com/synapselayer">@synapselayer</a>
-
-</div>
+<p align="center"><strong>Giving Agents a Past. Giving Models a Soul. ⚗️</strong></p>
