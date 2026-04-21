@@ -1,55 +1,25 @@
-# Security Policy
+# Security Policy — Synapse Layer Organization
 
-## Synapse Layer Trust Architecture
+**Report:** security@synapselayer.org · **Response:** 48h
 
-Synapse Layer implements a **non-bypassable 4-layer Cognitive Security Pipeline** that protects every memory operation:
+**Do NOT open public issues for security vulnerabilities.**
 
-| Layer | Name | Protection |
-|:---:|---|---|
-| 1 | Semantic Privacy Guard™ | PII redaction with 15+ regex patterns |
-| 2 | Intelligent Intent Validation™ | Two-step categorization with self-healing |
-| 3 | AES-256-GCM Encryption | Authenticated encryption at rest |
-| 4 | Differential Privacy | Calibrated Gaussian noise on embeddings |
+## Supported
 
-## Supported Versions
+- `synapse-layer >= 1.2.0`
 
-| Version | Supported |
-|---|---|
-| 1.1.x | ✅ Active |
-| 1.0.x | ⚠️ Security fixes only |
-| < 1.0 | ❌ End of life |
+## Scope
 
-## Reporting a Vulnerability
+Applies to all repositories under [github.com/SynapseLayer](https://github.com/SynapseLayer):
 
-**Do NOT open a public issue for security vulnerabilities.**
+- synapse-layer
+- synapse-layer-skill
+- skills
+- registry / servers (MCP mirrors)
 
-Please report security issues to:
+## What we monitor
 
-📧 **founder.synapselayer@proton.me**
-
-Include:
-- Description of the vulnerability
-- Steps to reproduce
-- Affected version(s)
-- Potential impact assessment
-
-### Response Timeline
-
-- **Acknowledgment:** within 48 hours
-- **Initial assessment:** within 5 business days
-- **Fix or mitigation:** within 30 days for critical issues
-
-### Disclosure Policy
-
-We follow coordinated disclosure. We will credit reporters in our security advisories (unless anonymity is requested).
-
-## Security Design Principles
-
-1. **Defense in depth** — All 4 security layers are mandatory and non-bypassable
-2. **Zero-knowledge by default** — Server never sees plaintext when encryption is enabled
-3. **Audit-ready payloads** — Every operation returns verifiable metadata for GDPR/LGPD compliance
-4. **Minimal surface area** — Trust Quotient™ weights and Neural Handover™ internals are proprietary (not in open-source code)
-
----
-
-**Synapse Layer** — Security is not a feature. It's the foundation.
+- Zero hardcoded secrets (CI `secret-scan.yml` on every push/PR)
+- Header-first auth (`x-connect-token`)
+- AES-256-GCM encryption at rest
+- PII redaction pipeline

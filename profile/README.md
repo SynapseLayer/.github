@@ -1,48 +1,30 @@
-<div align="center">
+# 🧠 Synapse Layer
 
-  <h2>Synapse Layer</h2>
+**Persistent memory infrastructure for AI agents.**
 
-  <p><strong>Continuous Consciousness Infrastructure for AI Systems</strong></p>
+*Add memory to any AI agent with one click.*
 
-  <p>Persistent. Secure. 1-line integration. 🧠</p>
+- 🔐 AES-256-GCM zero-knowledge encryption
+- 🧩 MCP-native: Claude Desktop, Cursor, LangChain
+- 🌐 Cross-agent memory transfer
+- 📦 `pip install synapse-layer`
 
-  <p>MCP-Native · Zero-Knowledge · Built in Brazil 🇧🇷</p>
-
-</div>
-
----
-
-### What We Build
-
-Memory infrastructure for the Agent Economy.
-
-| Repo | Description |
-|---|---|
-| [**synapse-layer**](https://github.com/SynapseLayer/synapse-layer) | Core SDK — Open Source (Apache 2.0) |
-| [**synapse-layer-skill**](https://github.com/SynapseLayer/synapse-layer-skill) | Agent entrypoint for MCP & marketplaces |
-| [**.github**](https://github.com/SynapseLayer/.github) | Governance, templates & community |
+[synapselayer.org](https://synapselayer.org) · [Docs](https://synapselayer.org/docs) · [PyPI](https://pypi.org/project/synapse-layer/)
 
 ---
 
-### Quick Start
+## Repositories
 
-```python
-from synapse_memory import SynapseMemory, SqliteBackend, remember
+| Repo | Purpose |
+|------|---------|
+| [synapse-layer](https://github.com/SynapseLayer/synapse-layer) | Python SDK — v1.2.0 |
+| [synapse-layer-skill](https://github.com/SynapseLayer/synapse-layer-skill) | MCP Skill |
+| [skills](https://github.com/SynapseLayer/skills) | Skill catalog |
 
-memory = SynapseMemory(agent_id="my-agent", backend=SqliteBackend())
+## Current State
 
-@remember(memory)
-async def answer(prompt: str) -> str:
-    return llm.chat(prompt)  # auto recall + store
-```
-
-### Connect
-
-- 📦 **PyPI:** `pip install synapse-layer`
-- 🔌 **MCP:** `forge.synapselayer.org/api/mcp`
-- 📖 **Docs:** [docs.synapselayer.org](https://docs.synapselayer.org)
-- 🌐 **Website:** [synapselayer.org](https://synapselayer.org)
-
----
-
-<p align="center"><strong>Giving Agents a Past. Giving Models a Soul. ⚗️</strong></p>
+| Channel | Version |
+|---------|---------|
+| PyPI | **1.2.0** |
+| MCP Marketplace | Approved |
+| Forge API | `forge.synapselayer.org` |
