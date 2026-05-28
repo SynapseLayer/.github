@@ -4,7 +4,7 @@
 
 *Add memory to any AI agent with one click.*
 
-- 🔐 AES-256-GCM zero-knowledge encryption
+- 🔐 AES-256-GCM encryption at rest
 - 🧩 MCP-native: Claude Desktop, Cursor, LangChain
 - 🌐 Cross-agent memory transfer
 - 📦 `pip install synapse-layer`
@@ -17,7 +17,7 @@
 
 | Repo | Purpose |
 |------|---------|
-| [synapse-layer](https://github.com/SynapseLayer/synapse-layer) | Python SDK — v1.2.0 |
+| [synapse-layer](https://github.com/SynapseLayer/synapse-layer) | Python SDK — v2.4.1 |
 | [synapse-layer-skill](https://github.com/SynapseLayer/synapse-layer-skill) | MCP Skill |
 | [skills](https://github.com/SynapseLayer/skills) | Skill catalog |
 
@@ -25,6 +25,6 @@
 
 | Channel | Version |
 |---------|---------|
-| PyPI | **1.2.0** |
+| PyPI | **2.4.1** |
 | MCP Marketplace | Approved |
 | Forge API | `forge.synapselayer.org` |
