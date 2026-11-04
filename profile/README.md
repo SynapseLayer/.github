@@ -17,7 +17,7 @@
 
 | Repo | Purpose |
 |------|---------|
-| [synapse-layer](https://github.com/SynapseLayer/synapse-layer) | Python SDK — v2.4.1 |
+| [synapse-layer](https://github.com/SynapseLayer/synapse-layer) | Core server + Python package — v2.4.6 |
 | [synapse-layer-skill](https://github.com/SynapseLayer/synapse-layer-skill) | MCP Skill |
 | [skills](https://github.com/SynapseLayer/skills) | Skill catalog |
 
@@ -25,6 +25,6 @@
 
 | Channel | Version |
 |---------|---------|
-| PyPI | **2.4.1** |
-| MCP Marketplace | Approved |
+| PyPI | **2.4.6** |
+| MCP Registry | `server.json` v2.4.6 |
 | Forge API | `forge.synapselayer.org` |
